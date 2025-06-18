@@ -43,13 +43,15 @@ Dijkstra 算法的核心思想是通过**逐步扩展最短路径来找到从起
 
 用 D 作为中转点，更新从 A 出发，经过 D 到达其他顶点的距离，如下图：
 
-![Dijkstra 算法第二步](https://slefboot-1251736664.file.myqcloud.com/20241122_ai_gallery_dijkstra_step2.png)
+![Dijkstra 算法第二步]<img width="1497" alt="20241122_ai_gallery_dijkstra_step_final" src="https://github.com/user-attachments/assets/b5a0a18f-529b-4302-8a14-e20f423b1a1a" />
+
 
 可以看到 B 和 E 的距离都更新了。 B 的距离从 10 更新为 6，E 的距离从无穷大更新为 4。
 
 接着可以继续下一步，观察这里的搜索过程，看距离数字和已搜索顶点的变化过程。最后的结果如下：
 
-![Dijkstra 算法最终结果](https://slefboot-1251736664.file.myqcloud.com/20241122_ai_gallery_dijkstra_step_final.png)
+![Dijkstra 算法最终结果]<img width="1497" alt="20241122_ai_gallery_dijkstra_step_final (1)" src="https://github.com/user-attachments/assets/e0ebb20f-4d9e-4f94-a8fe-71a096e0de87" />
+
 
 ## Dijkstra 算法正确性证明
 
@@ -94,6 +96,7 @@ Dijkstra 算法的核心思想是通过**逐步扩展最短路径来找到从起
 
 比如下面的图，存在负权重边 CE 为 -13，到 E 点的最短路径其实如图红色箭头 1，但是算法计算出来的还是 10：
 
-![Dijkstra 算法负权重图](https://slefboot-1251736664.file.myqcloud.com/20241205_ai_gallery_dijkstra_negative_weight.png)
+![Dijkstra 算法负权重图]<img width="1498" alt="20241205_ai_gallery_dijkstra_negative_weight" src="https://github.com/user-attachments/assets/41f88e38-2de7-4192-98bb-7b6bda1cc9dc" />
+
 
 对于带负权边的图，需要使用其他算法（如 Bellman-Ford 算法）来解决最短路径问题。
