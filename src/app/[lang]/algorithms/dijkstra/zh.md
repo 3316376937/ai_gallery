@@ -36,7 +36,7 @@ Dijkstra 算法的核心思想是通过**逐步扩展最短路径来找到从起
 
 点击下一步，第一步以 A 为起始点，记录了经过 A 到达各点的最短距离。
 
-![Dijkstra 算法第一步](<img width="1503" alt="222222" src="https://github.com/user-attachments/assets/a9e96d0c-0cc8-4549-a37a-548c8cea436f" />)
+![Dijkstra 算法第一步]<img width="1503" alt="222222" src="https://github.com/user-attachments/assets/a9e96d0c-0cc8-4549-a37a-548c8cea436f" />
 
 
 继续点击下一步，可以看到从上一步未访问的顶点中选择了距离最小的顶点，这里是距离为 4 的 D 顶点。
